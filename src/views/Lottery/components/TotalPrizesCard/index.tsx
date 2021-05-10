@@ -48,6 +48,24 @@ const ExpandingWrapper = styled.div<{ showFooter: boolean }>`
   }
 `
 
+const StyledFarmStakingCard = styled(Card)`
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  background-image: url(/images/steak-bg-2.png);
+  background-repeat: no-repeat;
+  background-position: 104% -45px;
+  background-size: 70%;
+
+  transition: 0.3s all;
+
+  ${({ theme }) => theme.mediaQueries.lg} {
+    margin: 0;
+    max-width: none;
+  }
+`
+
 const TotalPrizesCard = () => {
   const TranslateString = useI18n()
   const { account } = useWeb3React()
@@ -57,7 +75,7 @@ const TotalPrizesCard = () => {
   const { currentLotteryNumber } = useContext(PastLotteryDataContext)
 
   return (
-    <Card>
+    <StyledFarmStakingCard>
       <CardBody>
         {account && (
           <Flex mb="16px" alignItems="center" justifyContent="space-between" style={{ height: '20px' }}>
@@ -80,7 +98,7 @@ const TotalPrizesCard = () => {
               <Text fontSize="14px" color="textSubtle">
                 {TranslateString(722, 'Total Pot:')}
               </Text>
-              <Heading size="lg">{lotteryPrizeWithCommaSeparators} CAKE</Heading>
+              <Heading size="lg">{lotteryPrizeWithCommaSeparators} BBQ</Heading>
             </PrizeCountWrapper>
           </Left>
           <Right>
@@ -93,7 +111,7 @@ const TotalPrizesCard = () => {
           <PrizeGrid lotteryPrizeAmount={lotteryPrizeAmount} />
         </CardFooter>
       </ExpandingWrapper>
-    </Card>
+    </StyledFarmStakingCard>
   )
 }
 

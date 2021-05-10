@@ -15,15 +15,34 @@ const WinningNumbers: React.FC = () => {
   const MatchedNumber2 = useMatchingRewardLength(2)
   const TranslateString = useI18n()
 
+
+  const StyledFarmStakingCard = styled(Card)`
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    background-image: url(/images/veggie-bg.png);
+    background-repeat: no-repeat;
+    background-position: 104% -32px;
+    background-size: 49%;
+
+    transition: 0.3s all;
+
+    ${({ theme }) => theme.mediaQueries.lg} {
+      margin: 0;
+      max-width: none;
+    }
+  `
+
   return (
     <CardWrapper>
-      <Card>
+      <StyledFarmStakingCard>
         <CardBody>
           <StyledCardContentInner>
             <StyledCardHeader>
               <Title>
                 {account && lotteryHasDrawn
-                  ? `🥳${TranslateString(570, 'Winning Numbers This Round')}🥳`
+                  ? `🎉${TranslateString(570, 'Winning Numbers This Round')}🎉`
                   : TranslateString(572, 'Latest Winning Numbers')}
               </Title>
               <br />
@@ -100,12 +119,9 @@ const WinningNumbers: React.FC = () => {
                 </CenteredTextWithPadding>
               </RowNoPadding>
             </Column>
-            <Link href="https://api.pancakeswap.com/api/lottery?page=0&pageSize=25" target="_blank">
-              {TranslateString(448, 'Export recent winning numbers')}
-            </Link>
           </StyledCardContentInner>
         </CardBody>
-      </Card>
+      </StyledFarmStakingCard>
     </CardWrapper>
   )
 }
@@ -185,7 +201,7 @@ const CenteredTextWithPadding = styled.div`
 const TicketNumberBox = styled.div`
   padding: 10px;
   border-radius: 12px;
-  background: linear-gradient(180deg, #54dade 0%, #24c7d6 76.22%);
+  background: linear-gradient(180deg, #ab3313 0%, #ae4428 76.22%);
   color: white;
   font-size: 20px;
   font-weight: 900;
@@ -202,9 +218,8 @@ const TicketNumberBox = styled.div`
 
 const RabbitBox = styled.div`
   /* padding: 10px; */
-  border-radius: 12px;
-  margin: 16px 20px;
-  width: 60px;
+  width: 93px;
+  margin-top: 16px;
 `
 
 const RabbitBoxSmall = styled.div`

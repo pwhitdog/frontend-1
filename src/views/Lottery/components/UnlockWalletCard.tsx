@@ -17,8 +17,9 @@ const StyledHeading = styled(Heading)`
 
 const IconWrapper = styled.div`
   svg {
-    width: 80px;
+    width: 8160px;
     height: 80px;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2)) brightness(1.1)
   }
 `
 
