@@ -1,0 +1,97 @@
+0 verbose cli [
+0 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+0 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'install'
+0 verbose cli ]
+1 info using npm@7.0.8
+2 info using node@v15.2.0
+3 timing config:load:defaults Completed in 2ms
+4 timing config:load:file:C:\Users\Public\nvm\v15.2.0\node_modules\npm\npmrc Completed in 1ms
+5 timing config:load:builtin Completed in 1ms
+6 timing config:load:cli Completed in 1ms
+7 timing config:load:env Completed in 1ms
+8 timing config:load:file:C:\Users\Gonzalo Scannone\Documents\Projects\BBQ2\front\.npmrc Completed in 1ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:C:\Users\Gonzalo Scannone\.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:C:\Program Files\nodejs\etc\npmrc Completed in 1ms
+13 timing config:load:global Completed in 2ms
+14 timing config:load:cafile Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:setUserAgent Completed in 1ms
+17 timing config:load:setEnvs Completed in 2ms
+18 timing config:load Completed in 14ms
+19 verbose npm-session dea2c4840193eb6c
+20 timing npm:load Completed in 28ms
+21 http fetch GET 304 https://registry.npmjs.org/npm 194ms (from cache)
+22 timing arborist:ctor Completed in 1ms
+23 timing idealTree:init Completed in 1565ms
+24 timing idealTree:userRequests Completed in 10ms
+25 silly idealTree buildDeps
+26 silly fetch manifest @pancakeswap-libs/uikit@barbecueswapfinance/uikit
+27 silly placeDep ROOT @pancakeswap-libs/uikit@ REPLACE for: pancake-frontend@0.1.0 want: barbecueswapfinance/uikit
+28 timing idealTree:#root Completed in 8379ms
+29 timing idealTree:node_modules/@pancakeswap-libs/uikit Completed in 0ms
+30 timing idealTree:buildDeps Completed in 8380ms
+31 timing idealTree:fixDepFlags Completed in 18ms
+32 timing idealTree Completed in 9975ms
+33 timing command:install Completed in 9977ms
+34 notice New minor version of npm available! 7.0.8 -> 7.11.2
+34 notice Changelog: <https://github.com/npm/cli/releases/tag/v7.11.2>
+34 notice Run `npm install -g npm@7.11.2` to update!
+35 verbose stack Error: command failed
+35 verbose stack     at ChildProcess.<anonymous> (C:\Users\Public\nvm\v15.2.0\node_modules\npm\node_modules\@npmcli\promise-spawn\index.js:64:27)
+35 verbose stack     at ChildProcess.emit (node:events:329:20)
+35 verbose stack     at maybeClose (node:internal/child_process:1055:16)
+35 verbose stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:288:5)
+36 verbose cwd C:\Users\Gonzalo Scannone\Documents\Projects\BBQ2\front
+37 verbose Windows_NT 10.0.19042
+38 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+39 verbose node v15.2.0
+40 verbose npm  v7.0.8
+41 error code 129
+42 error command failed
+43 error command git clone ssh://git@github.com/barbecueswapfinance/uikit.git C:\Users\Gonzalo Scannone\Documents\Projects\BBQ2\front\UsersPublic\_cacache\tmp\git-clone-9c83bb33 --recurse-submodules --depth=1 --config core.longpaths=true
+44 error fatal: Too many arguments.
+44 error
+44 error usage: git clone [<options>] [--] <repo> [<dir>]
+44 error
+44 error     -v, --verbose         be more verbose
+44 error     -q, --quiet           be more quiet
+44 error     --progress            force progress reporting
+44 error     -n, --no-checkout     don't create a checkout
+44 error     --bare                create a bare repository
+44 error     --mirror              create a mirror repository (implies bare)
+44 error     -l, --local           to clone from a local repository
+44 error     --no-hardlinks        don't use local hardlinks, always copy
+44 error     -s, --shared          setup as shared repository
+44 error     --recurse-submodules[=<pathspec>]
+44 error                           initialize submodules in the clone
+44 error     -j, --jobs <n>        number of submodules cloned in parallel
+44 error     --template <template-directory>
+44 error                           directory from which templates will be used
+44 error     --reference <repo>    reference repository
+44 error     --reference-if-able <repo>
+44 error                           reference repository
+44 error     --dissociate          use --reference only while cloning
+44 error     -o, --origin <name>   use <name> instead of 'origin' to track upstream
+44 error     -b, --branch <branch>
+44 error                           checkout <branch> instead of the remote's HEAD
+44 error     -u, --upload-pack <path>
+44 error                           path to git-upload-pack on the remote
+44 error     --depth <depth>       create a shallow clone of that depth
+44 error     --shallow-since <time>
+44 error                           create a shallow clone since a specific time
+44 error     --shallow-exclude <revision>
+44 error                           deepen history of shallow clone, excluding rev
+44 error     --single-branch       clone only one branch, HEAD or --branch
+44 error     --no-tags             don't clone any tags, and make later fetches not to follow them
+44 error     --shallow-submodules  any cloned submodules will be shallow
+44 error     --separate-git-dir <gitdir>
+44 error                           separate git dir from working tree
+44 error     -c, --config <key=value>
+44 error                           set config inside the new repository
+44 error     -4, --ipv4            use IPv4 addresses only
+44 error     -6, --ipv6            use IPv6 addresses only
+44 error     --filter <args>       object filtering
+45 verbose exit 129
