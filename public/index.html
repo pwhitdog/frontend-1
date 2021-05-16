@@ -119,6 +119,47 @@
       .marketcaprow div:last-child::before {
         content: "$";
       }
+
+      @media (min-width: 1024px) {
+        .padding-right-lg {
+          /*padding-right: 300px;*/
+        }
+      }
+
+      body {
+        overflow-x: hidden !important;
+      }
+
+      .home-mascot {
+        position: absolute;
+        z-index: 2;
+        right: 65px;
+        top: 85px;
+        width: 470px;
+      }
+
+      @media (max-width: 851px) {
+        .home-mascot {
+          /*display: none !important;*/
+          position: relative;
+          margin: 0 auto;
+          display: block;
+          text-align: center;
+          right: auto;
+          top: auto;
+          width: 300px;
+          margin-bottom: 22px
+        }
+      }
+
+      .width-100 {
+        width: 100%;
+      }
+
+      .listed-on-item {
+        width: 22%;
+        margin-right: 1%;
+      }
 	</style>
 
   </head>

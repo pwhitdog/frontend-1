@@ -8,6 +8,7 @@ import LotteryCard from 'views/Home/components/LotteryCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
 import BurnCountDown from 'views/Home/components/BurnCountDown'
+import ListedOnCard from 'views/Home/components/ListedOnCard'
 import EarnAPYCard from 'views/Home/components/EarnAPYCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
 import WinCard from 'views/Home/components/WinCard'
@@ -112,12 +113,13 @@ const Home: React.FC = () => {
       </Header>
       <Page>
         <div>
-          <Cards>
+          <img className="home-mascot" src="/images/mascot.png" alt="Mr. Griller" />
+          <Cards className="padding-right-lg">
             <FarmStakingCard />
-            <CTACards>
-              <EarnAPYCard />
-              <EarnAssetCard />
-            </CTACards>
+          </Cards>
+          <Cards>
+            <EarnAPYCard />
+            <EarnAssetCard />
           </Cards>
           <Cards>
             <CakeStats />
@@ -125,6 +127,7 @@ const Home: React.FC = () => {
           </Cards>
           <Cards>
             <BurnCountDown />
+            <ListedOnCard />
           </Cards>
         </div>
         <img className="img-footer" src="/images/barbecue-cutlery-3.png" alt="" />

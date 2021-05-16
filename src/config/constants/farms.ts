@@ -19,6 +19,22 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },  
   {
+    pid: 9,
+    lpSymbol: 'ADA',
+    isTokenOnly: true,
+    lpAddresses: {
+      97: '',
+      56: '0xf35145e28e1dd67055221739d8554e0b5c7adcd5', // ADA-BUSD LP
+    },
+    tokenSymbol: 'ADA',
+    tokenAddresses: {
+      97: '',
+      56: '0x3ee2200efb3400fabb9aacf31297cbdd1d435d47',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
     pid: 7,
     lpSymbol: 'CAKE',
     isTokenOnly: true,

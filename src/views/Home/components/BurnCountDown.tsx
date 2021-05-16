@@ -26,9 +26,10 @@ const BurnCountDown = () => {
   // const data = useGetStats()
   // const tvl = data ? data.total_value_locked_all.toLocaleString('en-US', { maximumFractionDigits: 0 }) : null
 
-  const endDate = new Date();
-  endDate.setDate(endDate.getDate() + (7 + 7 - endDate.getDay()) % 7);
-  endDate.setHours(0,0,0,0);
+  const offset = new Date().getTimezoneOffset()/60;
+
+  let endDate = new Date("2021-05-23 00:00:00");
+  endDate = new Date(endDate.getTime() - offset * 1000 * 60 * 60);
 
   const startDate = new Date();
 
