@@ -10,10 +10,15 @@ import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url(/images/steak-bg-2.png);
+  background-image: url(/images/mascot.png);
   background-repeat: no-repeat;
-  background-position: 105% -30%;
+  background-position: 120%;
+  background-size: contain;
   min-height: 376px;
+
+  @media (max-width: 700px) {
+    background-position: 89px;
+  }
 `
 
 const Block = styled.div`

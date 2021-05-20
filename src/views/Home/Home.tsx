@@ -11,6 +11,7 @@ import BurnCountDown from 'views/Home/components/BurnCountDown'
 import ListedOnCard from 'views/Home/components/ListedOnCard'
 import EarnAPYCard from 'views/Home/components/EarnAPYCard'
 import EarnAssetCard from 'views/Home/components/EarnAssetCard'
+import BarbecueBurgerPartnershipCard from 'views/Home/components/BarbecueBurgerPartnershipCard'
 import WinCard from 'views/Home/components/WinCard'
 import contracts from 'config/constants/contracts'
 import { BASE_URL, BASE_EXCHANGE_URL } from 'config'
@@ -113,8 +114,9 @@ const Home: React.FC = () => {
       </Header>
       <Page>
         <div>
-          <img className="home-mascot" src="/images/mascot.png" alt="Mr. Griller" />
-          <Cards className="padding-right-lg">
+          { /* <img className="home-mascot" src="/images/mascot.png" alt="Mr. Griller" /> */ }
+          <Cards>
+            <BarbecueBurgerPartnershipCard />
             <FarmStakingCard />
           </Cards>
           <Cards>
