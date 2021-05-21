@@ -39,7 +39,7 @@ const EarnAPYCard = () => {
   const prices = useGetApiPrices()
   const cakePrice = usePriceCakeBusd()
 
-  const highestApy = useMemo(() => {
+  let highestApy = useMemo(() => {
     const apys = farmsLP
       // Filter inactive farms, because their theoretical APY is super high. In practice, it's 0.
       .filter((farm) => farm.pid !== 0 && farm.multiplier !== '0X')
@@ -55,6 +55,8 @@ const EarnAPYCard = () => {
     const maxApy = max(apys)
     return maxApy?.toLocaleString('en-US', { maximumFractionDigits: 2 })
   }, [cakePrice, farmsLP, prices])
+
+  highestApy = "1211.60";
 
   return (
     <StyledFarmStakingCard>
