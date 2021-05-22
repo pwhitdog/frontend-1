@@ -123,7 +123,7 @@ const fetchFarms = async () => {
         lpTotalInQuoteToken: lpTotalInQuoteToken.toJSON(),
         tokenPriceVsQuote: tokenPriceVsQuote.toJSON(),
         poolWeight: poolWeight.toJSON(),
-        multiplier: `${allocPoint.div(100).toString()}X`,
+        multiplier: `${allocPoint.div(10).toString()}X`,
         depositFeeBP: poolInfo.depositFeeBP,
         bbqPerBlock: new BigNumber(bbqPerBlock).toNumber(),
         lpTotalSupply: new BigNumber(lpTotalSupply).div(new BigNumber(10).pow(tokenDecimals)).toJSON(),

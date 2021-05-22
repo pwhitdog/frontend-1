@@ -19,6 +19,22 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },  
   {
+    pid: 10,
+    lpSymbol: 'BURGER',
+    isTokenOnly: true,
+    lpAddresses: {
+      97: '',
+      56: '0xefe7f68ad8ff757b5d951e7f202adfe6fd1c04c9', // BURGER-CAKE LP (PCS V2)
+    },
+    tokenSymbol: 'BURGER',
+    tokenAddresses: {
+      97: '',
+      56: '0xae9269f27437f0fcbc232d39ec814844a51d6b8f',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
     pid: 9,
     lpSymbol: 'ADA',
     isTokenOnly: true,

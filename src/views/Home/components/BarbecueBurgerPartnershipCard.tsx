@@ -26,12 +26,24 @@ const StyledBurnCountDown = styled(Card)`
   background-size: cover;
 
   min-height: 345px;
+
+  overflow: visible;
+`
+
+const NewsImg = styled.img`
+    position: absolute;
+    left: -18.5px;
+    top: -18.1px;
+    width: 160px;
+    filter: brightness(0.96);
+}
 `
 
 const BarbecueBurgerPartnershipCard = () => {
   return (
     <StyledBurnCountDown>
-      <CardBody />
+    	<NewsImg src="/images/news.png" />
+		<CardBody />
     </StyledBurnCountDown>
   )
 }

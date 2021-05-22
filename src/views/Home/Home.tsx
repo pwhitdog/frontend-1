@@ -98,7 +98,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header>
+      { /* <Header>
         <Heading as="h1" size="xl" color="secondary" mb="24px">
           {TranslateString(578, 'Tastiest BSC Token and Yield Farm on BSC.')}
         </Heading>
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
             </Button>
           </a>
         </Heading>
-      </Header>
+      </Header> */ } 
       <Page>
         <div>
           { /* <img className="home-mascot" src="/images/mascot.png" alt="Mr. Griller" /> */ }
@@ -120,16 +120,16 @@ const Home: React.FC = () => {
             <FarmStakingCard />
           </Cards>
           <Cards>
-            <EarnAPYCard />
-            <EarnAssetCard />
+            <BurnCountDown />
+            <ListedOnCard />
           </Cards>
           <Cards>
             <CakeStats />
             <TotalValueLockedCard />
           </Cards>
           <Cards>
-            <BurnCountDown />
-            <ListedOnCard />
+            <EarnAPYCard />
+            <EarnAssetCard />
           </Cards>
         </div>
         <img className="img-footer" src="/images/barbecue-cutlery-3.png" alt="" />

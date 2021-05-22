@@ -8,6 +8,7 @@
     <link rel="preconnect" href="%REACT_APP_NODE_3%" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon.png">
@@ -41,6 +42,18 @@
   </script>
 
 	<style type="text/css">
+
+      * {
+        font-family: 'Rubik' !important;
+      }
+      *::-webkit-scrollbar {
+        width: 0px !important;
+      }
+
+      nav {
+        overflow: hidden;
+      }
+
 	    .toggle-button { 
 	        height: auto; 
 	    }
@@ -85,6 +98,10 @@
         .poolCard:nth-child(1) {
           margin-top: 20px;
         }
+      }
+
+      .poolCard {
+        border: solid 1px rgba(133,133,133,0.1);
       }
 
       .highlight {

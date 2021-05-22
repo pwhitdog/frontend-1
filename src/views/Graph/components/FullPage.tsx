@@ -4,7 +4,7 @@ const FullPage = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  height: 100%;
+  height: calc(100% - 68px);
   flex: 1;
 `
 
