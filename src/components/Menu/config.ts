@@ -22,12 +22,6 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  // {
-  //   label: 'Trade',
-  //   icon: 'TradeIcon',
-  //   href: '/trade',
-  //   calloutClass: 'soon',
-  // },
   {
     label: 'Farms',
     icon: 'FarmIcon',
@@ -38,57 +32,6 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/pools',
   },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
-  // {
-  //   label: 'Collectibles',
-  //   icon: 'NftIcon',
-  //   href: '/collectibles',
-  // },
-  // {
-  //   label: 'Teams & Profile',
-  //   icon: 'GroupsIcon',
-  //   calloutClass: 'rainbow',
-  //   items: [
-  //     {
-  //       label: 'Leaderboard',
-  //       href: '/teams',
-  //     },
-  //     {
-  //       label: 'Task Center',
-  //       href: '/profile/tasks',
-  //     },
-  //     {
-  //       label: 'Your Profile',
-  //       href: '/profile',
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: 'Info',
-  //   icon: 'InfoIcon',
-  //   items: [
-  //     {
-  //       label: 'Overview',
-  //       href: 'https://pancakeswap.info',
-  //     },
-  //     {
-  //       label: 'Tokens',
-  //       href: 'https://pancakeswap.info/tokens',
-  //     },
-  //     {
-  //       label: 'Pairs',
-  //       href: 'https://pancakeswap.info/pairs',
-  //     },
-  //     {
-  //       label: 'Accounts',
-  //       href: 'https://pancakeswap.info/accounts',
-  //     },
-  //   ],
-  // },
   {
     label: 'IGO (Presale)',
     icon: 'IfoIcon',
@@ -113,12 +56,6 @@ const config: MenuEntry[] = [
     href: '',
     calloutClass: 'soon',
   },
-  // {
-  //   label: 'Borrow (soon)',
-  //   icon: 'BorrowIcon',
-  //   href: '',
-  //   calloutClass: 'soon',
-  // },
   {
     label: 'Price Chart',
     icon: 'InfoIcon',
@@ -137,12 +74,8 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'GitHub',
-        href: 'https://github.com/barbecueswapfinance',
+        href: 'https://github.com/barbecueswap',
       },
-      // {
-      //   label: 'Docs',
-      //   href: '',
-      // },
       {
         label: 'Twitter',
         href: 'https://twitter.com/BarbecueSwap',
